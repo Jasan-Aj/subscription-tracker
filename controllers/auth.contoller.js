@@ -79,7 +79,8 @@ export const signin = async(req, res, next)=>{
                 user: user,
                 token: token,
             }
-        })
+        });
+        
     }catch(error){
         next(error);
     }
